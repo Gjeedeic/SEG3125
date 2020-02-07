@@ -97,6 +97,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:ems="10"
+        android:hint="example (50)"
+        android:textColorHint="#75A3BB"
         android:inputType="textPersonName"
         android:textColor="#75A3BB"
         app:backgroundTint="#75A3BB"
