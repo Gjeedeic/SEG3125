@@ -62,6 +62,9 @@ public class Settings extends AppCompatActivity {
                 try {
                     String str = grade.getText().toString();
                     passGrade = Float.parseFloat(str);
+                    if(passGrade < 0 || passGrade > 100){
+                        passGrade = 50;
+                    }
                 } catch(NumberFormatException nfe) {
                     System.out.println("Could not parse " + nfe);
                 }
