@@ -127,20 +127,20 @@ public class Question extends AppCompatActivity {
         a = (RadioButton) findViewById(selectedId);
         QuestionA1 = findViewById(R.id.QuestionA1);
 
-        if(a == QuestionA1){
-            correct++;
-        }
+       if(a != null) {
+            if (a == QuestionA1) {
+                correct++;
+            }
 
-        if(answers != null){
             answers.clearCheck();
-        }
 
-        if(ans < numq){
-            ans++;
-            display();
-        } else {
-            ans = 1;
-            openResults();
+            if (ans < numq) {
+                ans++;
+                display();
+            } else {
+                ans = 1;
+                openResults();
+            }
         }
     }
 
