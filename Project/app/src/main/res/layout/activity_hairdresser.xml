@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hairdresser">
+    <include
+        layout="@layout/tool_bar"
+        android:id="@+id/tool_bar"/>
+
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:padding="4dp" />
+
+    <ImageView
+        android:id="@+id/searchicon"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="60dp"
+        app:srcCompat="@drawable/ic_search_black_24dp" />
+
+</RelativeLayout>
